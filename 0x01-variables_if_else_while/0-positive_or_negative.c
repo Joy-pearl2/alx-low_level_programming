@@ -1,4 +1,4 @@
-nclude <stdlib.h> 
+ #include <stdlib.h>
  #include <time.h> 
  #include <stdio.h> 
   
@@ -8,7 +8,7 @@ nclude <stdlib.h>
   *     * Return: Always (Success) 
   *      */ 
  int main(void) 
-	 { 
+	 {  
 		          int n; 
 		    
 		           srand(time(0)); 
@@ -28,4 +28,4 @@ nclude <stdlib.h>
 					          } 
 		         
 		                return (0); 
-			 }    
+			 }  
