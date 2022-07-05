@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main -main block
  * Descriprion: Get a random number and check its last digit, compare it with 5
