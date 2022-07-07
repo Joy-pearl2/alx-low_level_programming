@@ -8,8 +8,8 @@
 int main(void)
 {
 	int sum_of_evens = 0;
-	int = a;
-	int = b;
+	int a;
+	int b;
 	int sum = 1;
 
 	a = 1;
