@@ -7,5 +7,6 @@
 int _putchar(char);
 void _puts(char *);
 void print_number(int);
+int _atoi(char *);
 
 #endif
