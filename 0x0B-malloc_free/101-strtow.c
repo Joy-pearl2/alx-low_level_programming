@@ -48,17 +48,17 @@ char **strtow(char *str)
 			++pos;
 		if (!*pos)
 			break;
-		for (str = pos++; *pos && !_isspace(*pos); ++pos)
+		for (str = pos++; *pos && !_isspace(*pos); ++pos)
 			;
 		words[w] = (char *) malloc(sizeof(char) * (pos - str + 1));
 		if (!words[w])
 		{
-			while (w > 0)
+			while (w > 0)
 				free(words[--w]);
 			free(words);
 			return (NULL);
 		}
-		for (c = 0; str < pos; ++c, ++str)
+		for (c = 0; str < pos; ++c, ++str)
 			words[w][c] = *str;
 		words[w][c] = '\0';
 	} while (++w, *pos);
