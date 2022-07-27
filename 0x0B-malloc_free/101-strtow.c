@@ -8,10 +8,9 @@
  *
  * Return: 1 is c is a whitespace character, otherwise 0
  */
-
 int _isspace(int c)
 {
-	if (c == 0x20 0 || (c >= 0x09 && c <= 0x0d))
+	if (c == 0x20 || (c >= 0x09 && c <= 0x0d))
 		return (1);
 	return (0);
 }
@@ -28,14 +27,14 @@ char **strtow(char *str)
 	char **words, *pos = str;
 	int w = 0, c;
 
-	if (!(str && *str))
+	if (!(str && *str))
 		return (NULL);
 	do {
-		while (_isspace(*pos))
+		while (_isspace(*pos))
 			++pos;
-		if (!*pos)
+		if (!*pos)
 			break;
-		while (*(++pos) && !_isspace(*pos))
+		while (*(++pos) && !_isspace(*pos))
 			;
 	} while (++w, *pos);
 	if (!w)
