@@ -37,16 +37,16 @@ char **strtow(char *str)
 		while (*(++pos) && !_isspace(*pos))
 			;
 	} while (++w, *pos);
-	if (!w)
+	if (!w)
 		return (NULL);
-	words = (char **) malloc(sizeof(char *) * (w + 1));
-	if (!words)
+	words = (char **) malloc(sizeof(char *) * (w + 1));
+	if (!words)
 		return (NULL);
 	w = 0, pos = str;
 	do {
-		while (_isspace(*pos))
+		while (_isspace(*pos))
 			++pos;
-		if (!*pos)
+		if (!*pos)
 			break;
 		for (str = pos++; *pos && !_isspace(*pos); ++pos)
 			;
